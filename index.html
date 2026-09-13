@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Aleksandr Prokunin — QA engineer</title>
+<meta name="description" content="QA engineer specialising in web, API and GraphQL testing. Building testing processes from scratch and running ongoing QA. Barcelona, remote across the EU, UK, Middle East and US West Coast." />
+<meta property="og:title" content="Aleksandr Prokunin — QA engineer" />
+<meta property="og:description" content="Web, API and GraphQL testing. QA from scratch or ongoing testing. Remote across the EU, UK, Middle East and US West Coast." />
+<meta property="og:type" content="website" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: #111;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: #111; text-decoration: none; }
+  a:hover { color: #E5231B; }
+  h1, h2, h3, p { margin: 0; }
+
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px 96px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .rule-top { border-bottom: 2px solid #111; padding: 20px 0 18px; }
+  .rule { border-bottom: 1px solid #DEDEDE; }
+  .rule-heavy { border-bottom: 2px solid #111; }
+  .sec { padding: 56px 0; }
+
+  .micro {
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .accent { color: #E5231B; }
+  .muted { color: #8A8A8A; }
+
+  h1 {
+    font-size: clamp(40px, 7.4vw, 92px);
+    line-height: 0.92;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+  }
+  .subhead {
+    margin-top: 18px;
+    font-size: clamp(20px, 2.6vw, 30px);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    color: #111;
+    max-width: 22ch;
+  }
+  .lede {
+    margin-top: 36px;
+    font-size: clamp(16px, 1.6vw, 18px);
+    line-height: 1.5;
+    max-width: 52ch;
+    text-wrap: pretty;
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+  }
+  h3 {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+  }
+  .body { font-size: 15px; line-height: 1.6; color: #3C3C3C; text-wrap: pretty; }
+  .date { margin-top: 6px; font-size: 12px; color: #8A8A8A; letter-spacing: 0.04em; }
+
+  .portrait {
+    aspect-ratio: 3 / 4;
+    width: 100%;
+    background: #F0F0F0;
+    background-image: repeating-linear-gradient(135deg, rgba(0,0,0,0.05) 0 8px, transparent 8px 16px);
+    display: block;
+    object-fit: cover;
+    object-position: 50% 32%;
+  }
+  .portrait span {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8A8A8A;
+  }
+  .aside-note {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #555;
+  }
+  .cta {
+    display: block;
+    background: #E5231B;
+    color: #fff;
+    padding: 14px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    word-break: break-word;
+  }
+  .cta:hover { background: #111; color: #fff; }
+  .cv {
+    display: block;
+    border: 1px solid #111;
+    color: #111;
+    padding: 13px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .cv:hover { background: #111; color: #fff; }
+
+  .work-row {
+    display: grid;
+    grid-template-columns: repeat(10, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .mail {
+    display: block;
+    font-size: clamp(24px, 4.4vw, 46px);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    word-break: break-word;
+  }
+  .links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+  }
+  .links a { color: #555; }
+
+  .c2 { grid-column: span 2; min-width: 0; }
+  .c3 { grid-column: span 3; min-width: 0; }
+  .c4 { grid-column: span 4; min-width: 0; }
+  .c5 { grid-column: span 5; min-width: 0; }
+  .c7 { grid-column: span 7; min-width: 0; }
+  .c8 { grid-column: span 8; min-width: 0; }
+  .c10 { grid-column: span 10; min-width: 0; }
+  .hero-aside { display: flex; flex-direction: column; gap: 20px; }
+  .stack { display: flex; flex-direction: column; gap: 40px; }
+  .right { text-align: right; }
+
+  @media (max-width: 860px) {
+    .wrap { padding: 0 20px 72px; }
+    .sec { padding: 40px 0; }
+    .c2, .c3, .c4, .c5, .c7, .c8, .c10 { grid-column: 1 / -1; }
+    .work-row { grid-template-columns: 1fr; gap: 12px; }
+    .hero-aside { margin-top: 12px; }
+    .portrait { max-width: 320px; }
+    .right { text-align: left; }
+    .micro-label { margin-bottom: 14px; }
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <header class="grid rule-top">
+    <div class="c4 micro">Aleksandr Prokunin</div>
+    <div class="c4 micro muted">QA engineer / Barcelona</div>
+    <div class="c4 micro right"><a class="accent" href="mailto:qa.aleksandr.prokunin@gmail.com">Email</a></div>
+  </header>
+
+  <section class="grid rule" style="padding: 56px 0 60px;">
+    <div class="c8">
+      <h1>QA engineer</h1>
+      <p class="subhead">Web, API and GraphQL testing</p>
+      <p class="lede">I test what teams ship: functional, regression, API and GraphQL, plus the release pipeline around it. I work AI-first: these tools are in my daily workflow, and I can tell you where they genuinely speed things up and where they quietly produce garbage you shouldn't trust.</p>
+    </div>
+    <div class="c4 hero-aside">
+      <img class="portrait" src="portrait.jpg" alt="Aleksandr Prokunin" />
+      <p class="aside-note">Based in Barcelona. Working in English, German and Spanish, remote across the EU, UK, the Middle East and the US West Coast. Available from a few hours a week to full-time.</p>
+      <a class="cta" href="mailto:qa.aleksandr.prokunin@gmail.com">qa.aleksandr.prokunin@gmail.com</a>
+      <a class="cv" href="qa_prokunin.pdf" download>Download CV (PDF)</a>
+    </div>
+  </section>
+
+  <section class="grid sec rule">
+    <div class="c2 micro accent micro-label">01 Services</div>
+    <div class="c5">
+      <h2>QA from scratch</h2>
+      <p class="body">You're shipping without a testing process. I come in and build one: structured test case database, checklists, bug reporting flow, release verification - wired into your CI/CD rather than living in someone's head.</p>
+    </div>
+    <div class="c5">
+      <h2>Ongoing testing</h2>
+      <p class="body">Functional and regression testing, API and GraphQL coverage, release builds and deployment verification, bug triage and retesting. Steady hands on the product while your engineers build.</p>
+    </div>
+  </section>
+
+  <section class="grid sec rule">
+    <div class="c2 micro accent micro-label">02 Work</div>
+    <div class="c10 stack">
+      <article class="work-row">
+        <div class="c3">
+          <h3>Fintech platform (under NDA)</h3>
+          <div class="date">2025–present</div>
+        </div>
+        <p class="c7 body">Functional and regression testing across web, API and GraphQL services. Designed and maintain the structured test case database. Analyse and verify tickets and bug reports. Manage releases through CI/CD pipelines, including build and packaging of release artifacts.</p>
+      </article>
+      <article class="work-row">
+        <div class="c3">
+          <h3>Medyoga (online education platform)</h3>
+          <div class="date">2023–2025</div>
+        </div>
+        <p class="c7 body">Built the testing foundation from scratch: 150+ checklists and test cases across web and mobile. Smoke and module testing across 15+ new features, including two critical authentication bugs caught before release. Cross-browser and cross-platform verification across five browsers and three mobile operating systems. Wrote and ran SQL queries to verify data integrity — no critical data defects found in production.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="grid sec rule-heavy">
+    <div class="c2 micro accent micro-label">03 Background</div>
+    <p class="c8" style="font-size: clamp(16px, 1.7vw, 19px); line-height: 1.55; text-wrap: pretty;">Before QA: four years in product research and data analysis at iKS-Consulting — survey design, data validation, SQL analysis, client-facing project work. Professional retraining in QA Engineering at Yandex.Practicum. MSc in Sociology, Moscow State Linguistic University, with published research on survey methodology.</p>
+  </section>
+
+  <section class="grid" style="padding: 48px 0 0;">
+    <div class="c2 micro accent micro-label">04 Contact</div>
+    <div class="c10">
+      <a class="mail" href="mailto:qa.aleksandr.prokunin@gmail.com">qa.aleksandr.prokunin@gmail.com</a>
+      <nav class="links">
+        <a href="qa_prokunin.pdf" download>Download CV (PDF)</a>
+        <a href="https://wa.me/34607488784">WhatsApp +34 607 48 87 84</a>
+        <a href="https://linkedin.com/in/aleksandrprokunin">linkedin.com/in/aleksandrprokunin</a>
+        <a href="https://github.com/Promaximum">github.com/Promaximum</a>
+      </nav>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
