@@ -153,6 +153,43 @@
   .hero-aside { display: flex; flex-direction: column; gap: 20px; }
   .stack { display: flex; flex-direction: column; gap: 40px; }
   .right { text-align: right; }
+  .site-footer {
+    border-top: 2px solid #111;
+    padding-top: 28px;
+    padding-bottom: 40px;
+  }
+  .site-footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .qr-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .qr-code {
+    display: block;
+    width: 88px;
+    height: 88px;
+    padding: 6px;
+    border: 1px solid #111;
+    background: #fff;
+  }
+  .qr-link:hover .qr-code { border-color: #E5231B; }
+  .qr-copy { display: flex; flex-direction: column; gap: 7px; }
+  .qr-kicker {
+    color: #E5231B;
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+  .qr-url {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
 
   @media (max-width: 860px) {
     .wrap { padding: 0 20px 72px; }
@@ -163,6 +200,8 @@
     .portrait { max-width: 320px; }
     .right { text-align: left; }
     .micro-label { margin-bottom: 14px; }
+    .site-footer-inner { align-items: flex-start; flex-direction: column; }
+    .qr-url { font-size: 16px; }
   }
 </style>
 </head>
@@ -240,5 +279,20 @@
   </section>
 
 </main>
+<footer class="wrap site-footer">
+  <div class="grid">
+    <div class="c2 micro accent micro-label">05 Visit</div>
+    <div class="c10 site-footer-inner">
+      <a class="qr-link" href="https://promaximum.github.io/" aria-label="Open promaximum.github.io">
+        <img class="qr-code" src="qr-code.svg" alt="QR code linking to promaximum.github.io" />
+        <span class="qr-copy">
+          <span class="qr-kicker">Scan to visit</span>
+          <span class="qr-url">promaximum.github.io</span>
+        </span>
+      </a>
+      <span class="micro muted">QR / direct link</span>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
